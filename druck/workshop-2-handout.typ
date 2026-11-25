@@ -1,7 +1,7 @@
 #import "_stil.typ": *
 #show: doc => handout("Workshop 2 · Silvan", "KI-Instruktionen und Skill-Files", doc)
 
-Eine KI arbeitet so gut wie die Anweisungen, die sie bekommt. Was du immer wieder erklärst, schreibst du *einmal* auf.
+Was du einer KI immer wieder erklärst, schreibst du *einmal* auf.
 
 #grid(columns: (1fr, 1fr, 1fr), gutter: 8pt,
   kasten("Prompt")[Gilt für eine Nachricht. Du schreibst ihn jedes Mal neu.],
@@ -13,19 +13,19 @@ Eine KI arbeitet so gut wie die Anweisungen, die sie bekommt. Was du immer wiede
 
 #kasten("Rolle: Wer soll die KI für mich sein?", fill: grey)[
   #text(9pt, style: "italic")[Beispiel: «Du bist mein Sparring-Partner für mein Lernvorhaben, kein Ghostwriter.»]
-  #linien(2, abstand: 1.15em)
+  #linien(2, abstand: 1.0em)
 ]
 #kasten("Ziel: Was will ich erreichen, und woran merke ich es?", fill: grey)[
   #text(9pt, style: "italic")[Beispiel: «Am Schluss weiss ich meinen nächsten Schritt und habe ihn selbst formuliert.»]
-  #linien(2, abstand: 1.15em)
+  #linien(2, abstand: 1.0em)
 ]
 #kasten("Vorgehen: Wie soll sie arbeiten?", fill: grey)[
   #text(9pt, style: "italic")[Beispiel: «Stell zuerst höchstens zwei Fragen. Antworte in höchstens acht Sätzen.»]
-  #linien(2, abstand: 1.15em)
+  #linien(2, abstand: 1.0em)
 ]
 #kasten("Grenzen: Was soll sie nicht tun, und was stattdessen?", fill: grey)[
   #text(9pt, style: "italic")[Beispiel: «Erfinde nichts. Sag, wenn du unsicher bist. Schreib keine Texte, die ich abgeben würde.»]
-  #linien(2, abstand: 1.15em)
+  #linien(2, abstand: 1.0em)
 ]
 
 #text(13pt, weight: "bold", fill: navy)[Übung (13 Minuten): wähle eine Stufe]
@@ -47,4 +47,4 @@ Eine KI arbeitet so gut wie die Anweisungen, die sie bekommt. Was du immer wiede
 
 #balken("Merke:")[Instruktionen machen Antworten passender, nicht automatisch richtig. Prüfe weiter, was die KI sagt.]
 
-#text(9pt)[Halte dein Ergebnis im Learning Canvas fest. Vorlagen und Beispiele: `github.com/silvanadrian/ki-instruktionen-workshop`]
+#text(8.5pt)[Halte dein Ergebnis im Learning Canvas fest. Vorlagen: `github.com/silvanadrian/ki-instruktionen-workshop`]
