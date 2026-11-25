@@ -32,4 +32,4 @@ a { color:var(--navy); }
 .eintrag { border-radius:6px; padding:8px 10px; margin:.4em 0; display:flex; justify-content:space-between; gap:8px; align-items:center; flex-wrap:wrap; background:#fff; border:1px solid var(--line); }
 .eintrag.gruen { background:#dff1e7; } .eintrag.gelb { background:#fbefc9; } .eintrag.rot { background:#f6d9d6; }
 .eintrag span { flex:1 1 180px; }
-@media (max-width:520px) { h1 { font-size:23px; } button { width:100%; } .ampel button, .eintrag button { width:auto; } }
+@media (max-width:520px) { h1 { font-size:23px; } button { width:100%; } .ampel button, .eintrag button { width:auto; flex:1 1 auto; } .eintrag span { flex:1 1 100%; } }
