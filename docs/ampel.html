@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workshop 4: KI, Daten und Verantwortung</title>
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<main>
+<div class="kopf">Workshop 4 · Future Work Skills · Modul 5</div>
+<h1>KI, Daten und Verantwortung</h1>
+<p>Du arbeitest in deinem eigenen KI-Tool. Diese Seite führt dich durch vier Schritte. Was du hier eintippst, bleibt in deinem Browser und wird nirgends hochgeladen. Schreib trotzdem keine echten Namen hinein.</p>
+
+<section class="schritt grau">
+  <h2><span class="nr">1</span>Was weiss deine KI über dich? <span class="zeit">4 Min.</span></h2>
+  <p>Öffne das KI-Tool, das du am meisten nutzt, und stell diese Frage. Lies die Antwort in Ruhe.</p>
+  <div class="frage"><span id="q1">Was weisst du über mich? Liste alles auf, was du aus früheren Gesprächen, aus deinem Gedächtnis oder aus meinen Einstellungen über mich weisst.</span><button class="hell" data-copy="q1">Kopieren</button></div>
+  <p class="klein">Je nach Tool und Einstellung kommt viel, wenig oder nichts. Auch «nichts» ist eine Antwort: Dann speichert dein Tool keine Erinnerungen, oder die Funktion ist ausgeschaltet.</p>
+</section>
+
+<section class="schritt">
+  <h2><span class="nr">2</span>Einstellungen prüfen <span class="zeit">5 Min.</span></h2>
+  <p>Such in den Einstellungen deines KI-Tools nach diesen drei Punkten. Die Menüs heissen überall etwas anders; frag ruhig deine Nachbarin oder deinen Nachbarn.</p>
+  <ul class="pruef">
+    <li><label><input type="checkbox" data-k="c1"> Werden meine Chats genutzt, um das Modell zu trainieren? Kann ich das ausschalten?</label></li>
+    <li><label><input type="checkbox" data-k="c2"> Merkt sich das Tool Dinge über mich (Gedächtnis, Memory)? Kann ich sie ansehen und löschen?</label></li>
+    <li><label><input type="checkbox" data-k="c3"> Wie lange bleibt mein Chatverlauf gespeichert, und kann ich ihn löschen?</label></li>
+  </ul>
+  <label for="fund">Was hat dich überrascht?</label>
+  <textarea id="fund" placeholder="Ich wusste nicht, dass …"></textarea>
+</section>
+
+<section class="schritt">
+  <h2><span class="nr">3</span>Dein Lernvorhaben durch die Ampel <span class="zeit">8 Min.</span></h2>
+  <p>Welche Angaben bräuchte die KI, um dir bei deinem Lernvorhaben zu helfen? Trag sie ein und ordne jede ein.</p>
+  <p class="klein"><b>Grün:</b> öffentlich, eigene Ideen, anonymisiert. <b>Gelb:</b> eigene persönliche Angaben, interne Unterlagen, wenn dein Arbeitgeber es erlaubt. <b>Rot:</b> Daten über andere Personen, Vertrauliches, Zugangsdaten.</p>
+  <div class="zeile">
+    <input type="text" id="neu" placeholder="z. B. mein Lernziel, Feedback meiner Chefin, Kundenliste" aria-label="Neue Angabe">
+    <button id="dazu">Hinzufügen</button>
+  </div>
+  <div id="liste" aria-live="polite"></div>
+  <p class="klein" id="zaehler"></p>
+  <p class="klein">Tipp: Anonymisieren macht aus Gelb oder Rot oft Grün. Ersetze Namen, Firma und Zahlen.</p>
+</section>
+
+<section class="schritt">
+  <h2><span class="nr">4</span>Drei eigene Regeln <span class="zeit">5 Min.</span></h2>
+  <p>Wo setzt du KI in deinem Lernvorhaben ein, und wo verzichtest du bewusst? Formuliere drei Regeln, an die du dich hältst.</p>
+  <label for="r1">Regel 1</label><input type="text" id="r1" placeholder="Ich gebe keine …">
+  <label for="r2">Regel 2</label><input type="text" id="r2" placeholder="Bevor ich etwas übernehme, …">
+  <label for="r3">Regel 3</label><input type="text" id="r3" placeholder="Für … nutze ich KI bewusst nicht, weil …">
+  <div class="zeile"><button id="alles">Ampel und Regeln kopieren (fürs Learning Canvas)</button></div>
+  <p>Tausch dich danach zu zweit aus: eine Regel und der Grund dafür.</p>
+</section>
+
+<div class="balken"><b>Automation Bias:</b> Was sicher klingt und fertig aussieht, glauben wir zu schnell. Frag «Woher weisst du das?» und prüfe mindestens eine Angabe selbst.</div>
+
+<section class="schritt grau">
+  <h2>Zum Nachlesen</h2>
+  <p><b>Urheberrecht:</b> Darfst du das Material hochladen? Rein KI-erzeugte Inhalte sind in der Schweiz nicht urheberrechtlich geschützt. Gleicht das Ergebnis einem bestehenden Werk?</p>
+  <p><b>EU AI Act:</b> Regeln nach Risiko. Bei hohem Risiko, zum Beispiel KI bei Bewerbungen, muss ein Mensch überwachen und eingreifen können.</p>
+  <p><b>Schweiz:</b> kein eigenes KI-Gesetz. Der AI Act betrifft aber Firmen mit Kundschaft in der EU.</p>
+  <p class="klein">Stand November 2026. Keine Rechtsberatung; die Rechtslage zu KI ist in Bewegung.</p>
+</section>
+
+<p class="klein"><a href="index.html">Zur Übersicht</a></p>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const farben = { gruen: "Grün", gelb: "Gelb", rot: "Rot" };
+let stand = { items: [], fund: "", r1: "", r2: "", r3: "", c1: false, c2: false, c3: false };
+try { stand = Object.assign(stand, JSON.parse(localStorage.getItem("ws4") || "{}")); } catch (e) {}
+function sichern() { try { localStorage.setItem("ws4", JSON.stringify(stand)); } catch (e) {} }
+
+function zeichnen() {
+  const liste = $("liste"); liste.textContent = "";
+  stand.items.forEach((it, i) => {
+    const div = document.createElement("div"); div.className = "eintrag ampel " + (it.farbe || "");
+    const span = document.createElement("span"); span.textContent = it.text; div.appendChild(span);
+    for (const f in farben) {
+      const b = document.createElement("button"); b.type = "button"; b.textContent = farben[f];
+      b.className = it.farbe === f ? "" : "hell"; b.setAttribute("aria-pressed", it.farbe === f ? "true" : "false");
+      b.addEventListener("click", () => { stand.items[i].farbe = f; sichern(); zeichnen(); });
+      div.appendChild(b);
+    }
+    const weg = document.createElement("button"); weg.type = "button"; weg.className = "hell"; weg.textContent = "Entfernen";
+    weg.setAttribute("aria-label", "Entfernen: " + it.text);
+    weg.addEventListener("click", () => { stand.items.splice(i, 1); sichern(); zeichnen(); });
+    div.appendChild(weg);
+    liste.appendChild(div);
+  });
+  const n = f => stand.items.filter(it => it.farbe === f).length;
+  $("zaehler").textContent = stand.items.length
+    ? "Grün: " + n("gruen") + " · Gelb: " + n("gelb") + " · Rot: " + n("rot") + " · noch offen: " + stand.items.filter(it => !it.farbe).length
+    : "Noch keine Angaben.";
+}
+function dazu() {
+  const t = $("neu").value.trim(); if (!t) return;
+  stand.items.push({ text: t, farbe: "" }); $("neu").value = ""; sichern(); zeichnen(); $("neu").focus();
+}
+$("dazu").addEventListener("click", dazu);
+$("neu").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); dazu(); } });
+for (const k of ["fund", "r1", "r2", "r3"]) { $(k).value = stand[k] || ""; $(k).addEventListener("input", () => { stand[k] = $(k).value; sichern(); }); }
+document.querySelectorAll("input[type=checkbox][data-k]").forEach(c => {
+  c.checked = !!stand[c.dataset.k];
+  c.addEventListener("change", () => { stand[c.dataset.k] = c.checked; sichern(); });
+});
+async function kopieren(text, knopf) {
+  let ok = true;
+  try { await navigator.clipboard.writeText(text); }
+  catch (e) {
+    const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select();
+    try { ok = document.execCommand("copy"); } catch (e2) { ok = false; }
+    ta.remove();
+  }
+  const alt = knopf.textContent;
+  knopf.textContent = ok ? "Kopiert" : "Bitte von Hand markieren";
+  setTimeout(() => { knopf.textContent = alt; }, 1600);
+}
+document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => kopieren($(b.dataset.copy).textContent, b)));
+$("alles").addEventListener("click", e => {
+  const zeilen = ["Meine Ampel"];
+  for (const f in farben) {
+    const xs = stand.items.filter(it => it.farbe === f).map(it => it.text);
+    zeilen.push(farben[f] + ": " + (xs.length ? xs.join("; ") : "–"));
+  }
+  zeilen.push("", "Meine drei Regeln", "1. " + (stand.r1 || "–"), "2. " + (stand.r2 || "–"), "3. " + (stand.r3 || "–"));
+  if (stand.fund) zeilen.push("", "Was mich überrascht hat: " + stand.fund);
+  kopieren(zeilen.join("\n"), e.currentTarget);
+});
+zeichnen();
+</script>
+</body>
+</html>

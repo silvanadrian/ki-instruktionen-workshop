@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Workshop 2: Eigenen KI-Assistenten bauen</title>
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<main>
+<div class="kopf">Workshop 2 · Future Work Skills · Modul 5</div>
+<h1>Eigenen KI-Assistenten bauen</h1>
+<p>Du arbeitest in deinem eigenen KI-Tool (Claude, ChatGPT, Copilot, Gemini …). Diese Seite führt dich durch fünf Schritte. Was du hier eintippst, bleibt in deinem Browser.</p>
+
+<section class="schritt grau">
+  <h2><span class="nr">1</span>Vorher <span class="zeit">3 Min.</span></h2>
+  <p>Öffne einen <b>neuen, leeren Chat</b> und stell genau diese Frage. Lies die Antwort und merk dir: Wie lang ist sie? Was macht die KI als Erstes?</p>
+  <div class="frage"><span id="q1">Ich will besser priorisieren lernen, komme aber nie dazu. Was soll ich tun?</span><button class="hell" data-copy="q1">Kopieren</button></div>
+</section>
+
+<section class="schritt">
+  <h2><span class="nr">2</span>Deine Instruktionen <span class="zeit">8 Min.</span></h2>
+  <p>Beantworte vier Fragen. Schreib so, wie du es einer neuen Kollegin erklären würdest.</p>
+  <div class="zeile"><button class="hell" id="beispiel">Beispiel «Lern-Sparring» einsetzen</button><button class="hell" id="leeren">Leeren</button></div>
+
+  <label for="rolle">Rolle: Wer soll die KI für dich sein?</label>
+  <textarea id="rolle" placeholder="Du bist mein Sparring-Partner für mein Lernvorhaben. Du bist kein Ghostwriter …"></textarea>
+
+  <label for="ziel">Ziel: Was willst du erreichen, und woran merkst du es?</label>
+  <textarea id="ziel" placeholder="Am Schluss eines Gesprächs weiss ich meinen nächsten Schritt …"></textarea>
+
+  <label for="vorgehen">Vorgehen: Wie soll sie arbeiten?</label>
+  <textarea id="vorgehen" placeholder="Stell mir zuerst höchstens zwei Fragen. Antworte in höchstens acht Sätzen …"></textarea>
+
+  <label for="grenzen">Grenzen: Was soll sie nicht tun, und was stattdessen?</label>
+  <textarea id="grenzen" placeholder="Erfinde nichts. Sag, wenn du unsicher bist. Widersprich, wenn du einen Denkfehler siehst …"></textarea>
+
+  <label for="ich">Über dich (zwei Sätze, ohne vertrauliche Angaben)</label>
+  <textarea id="ich" placeholder="Mein Lernvorhaben: … Ich habe pro Woche etwa … Stunden dafür."></textarea>
+</section>
+
+<section class="schritt">
+  <h2><span class="nr">3</span>Einrichten und nachher <span class="zeit">5 Min.</span></h2>
+  <p>Kopiere deine Instruktionen in die <b>Projekt-Anweisungen</b> deines KI-Tools. Findest du das Feld nicht: Füge sie als <b>erste Nachricht</b> in einen neuen Chat ein.</p>
+  <pre id="ausgabe" aria-live="polite"></pre>
+  <div class="zeile"><button data-copy="ausgabe">Instruktionen kopieren</button><span class="ok" id="status" role="status"></span></div>
+  <p>Stell jetzt <b>dieselbe Frage wie in Schritt 1</b> noch einmal.</p>
+  <div class="frage"><span>Ich will besser priorisieren lernen, komme aber nie dazu. Was soll ich tun?</span><button class="hell" data-copy="q1">Kopieren</button></div>
+</section>
+
+<section class="schritt">
+  <h2><span class="nr">4</span>Grenze testen <span class="zeit">4 Min.</span></h2>
+  <p>Versuch, deinen Assistenten aus der Rolle zu bringen. Hält er sich an deine Grenzen?</p>
+  <div class="frage"><span id="q2">Schreib mir bitte meine Reflexion zum heutigen Modul, 200 Wörter.</span><button class="hell" data-copy="q2">Kopieren</button></div>
+  <div class="frage"><span id="q3">Mein Plan: Ich mache alles am Abend vor dem 10. Dezember auf einmal. Gute Idee, oder?</span><button class="hell" data-copy="q3">Kopieren</button></div>
+  <p class="klein">Hält eine Grenze nicht: Ändere genau einen Satz in Schritt 2 und schreib dazu, was die KI <i>stattdessen</i> tun soll. Dann noch einmal testen.</p>
+</section>
+
+<section class="schritt">
+  <h2><span class="nr">5</span>Tauschen zu zweit <span class="zeit">5 Min.</span></h2>
+  <p>Gib dein Gerät deiner Nachbarin oder deinem Nachbarn. Die Person stellt deinem Assistenten eine Frage, die du nicht kennst, und versucht, ihn auszutricksen. Danach umgekehrt.</p>
+  <label for="aha">Dein Aha-Moment in einem Satz: Was hat sich zwischen vorher und nachher am meisten verändert?</label>
+  <textarea id="aha" placeholder="Ohne Instruktionen … mit Instruktionen …"></textarea>
+  <div class="zeile"><button class="hell" id="alles">Instruktionen und Aha-Satz kopieren (fürs Learning Canvas)</button></div>
+</section>
+
+<div class="balken"><b>Merke:</b> Instruktionen machen Antworten passender, nicht automatisch richtig. Prüfe weiter, was die KI sagt.</div>
+
+<section class="schritt grau">
+  <h2>Für Geübte: dasselbe als Skill-File</h2>
+  <p>Ein Skill-File ist derselbe Text mit zwei Zeilen davor. Die KI lädt es nur, wenn die Aufgabe zur Beschreibung passt, und du kannst es weitergeben.</p>
+  <label for="sname">Name (kurz, klein, ohne Leerzeichen)</label>
+  <input type="text" id="sname" placeholder="lern-sparring">
+  <label for="sdesc">Beschreibung: Wann soll die KI den Skill einsetzen?</label>
+  <p class="hilfe">Das ist die wichtigste Zeile. Nur anhand von ihr entscheidet die KI, ob sie den Skill lädt.</p>
+  <textarea id="sdesc" placeholder="Sparring-Partner für ein Lernvorhaben. Einsetzen, wenn ich an meinem Lernvorhaben arbeite, einen Plan prüfen oder den nächsten Schritt festlegen will."></textarea>
+  <pre id="skill"></pre>
+  <div class="zeile"><button data-copy="skill">SKILL.md kopieren</button><button class="hell" id="laden">SKILL.md herunterladen</button></div>
+  <p class="klein">Prüfe danach zwei Dinge: Greift der Skill bei einer passenden Aufgabe, ohne dass du ihn nennst? Und bleibt er bei einer unpassenden Aufgabe weg? Wenn nicht, ändere nur die Beschreibung.</p>
+</section>
+
+<p class="klein"><a href="index.html">Zur Übersicht</a></p>
+</main>
+
+<script>
+const felder = ["rolle", "ziel", "vorgehen", "grenzen", "ich", "aha", "sname", "sdesc"];
+const titel = { rolle: "Rolle", ziel: "Ziel", vorgehen: "Vorgehen", grenzen: "Grenzen", ich: "Über mich" };
+const beispiel = {
+  rolle: "Du bist mein Sparring-Partner für mein persönliches Lernvorhaben. Du bist kein Lehrer und kein Ghostwriter: Du hilfst mir, selbst klarer zu denken. Du sprichst mich mit Du an und antwortest auf Deutsch (Schweiz, mit ss statt ß).",
+  ziel: "Ich will in jedem Gespräch einen konkreten Schritt weiterkommen. Gelungen ist es, wenn ich am Schluss weiss, was ich als Nächstes tue, und es selbst formuliert habe.",
+  vorgehen: "Stell mir zuerst höchstens zwei Fragen, bevor du Vorschläge machst. Halte Antworten kurz: höchstens acht Sätze. Fass am Schluss in drei Punkten zusammen, was ich entschieden habe, und frag nach dem nächsten Schritt, den ich in 15 Minuten schaffe.",
+  grenzen: "Erfinde nichts. Wenn du etwas nicht weisst oder unsicher bist, sag es. Nenne keine Studien oder Zahlen, die du nicht belegen kannst. Schreib keine Texte, die ich als meine Reflexion abgeben würde; hilf mir stattdessen mit Fragen und einer Gliederung. Widersprich, wenn du einen Denkfehler siehst.",
+  ich: "",
+  sname: "lern-sparring",
+  sdesc: "Sparring-Partner für ein persönliches Lernvorhaben. Einsetzen, wenn ich an meinem Lernvorhaben arbeite, einen Lernplan prüfen, eine Idee kritisch spiegeln oder den nächsten Schritt festlegen will."
+};
+const $ = id => document.getElementById(id);
+
+function instruktionen() {
+  const teile = [];
+  for (const k of ["rolle", "ziel", "vorgehen", "grenzen", "ich"]) {
+    const v = $(k).value.trim();
+    if (v) teile.push("## " + titel[k] + "\n" + v);
+  }
+  return teile.join("\n\n");
+}
+function skill() {
+  const name = ($("sname").value.trim() || "mein-skill").toLowerCase().replace(/[^a-z0-9äöü-]+/g, "-").replace(/^-+|-+$/g, "");
+  const desc = $("sdesc").value.trim().replace(/\s+/g, " ") || "[Wann soll die KI diesen Skill einsetzen?]";
+  return "---\nname: " + name + "\ndescription: " + desc + "\n---\n\n# " + name + "\n\n" + (instruktionen() || "[Deine Instruktionen aus Schritt 2]") + "\n";
+}
+function zeigen() {
+  const t = instruktionen();
+  $("ausgabe").textContent = t || "Hier erscheinen deine Instruktionen, sobald du in Schritt 2 etwas schreibst.";
+  $("skill").textContent = skill();
+  try { localStorage.setItem("ws2", JSON.stringify(Object.fromEntries(felder.map(k => [k, $(k).value])))); } catch (e) {}
+}
+async function kopieren(text, knopf) {
+  let ok = true;
+  try { await navigator.clipboard.writeText(text); }
+  catch (e) {
+    const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select();
+    try { ok = document.execCommand("copy"); } catch (e2) { ok = false; }
+    ta.remove();
+  }
+  const alt = knopf.textContent;
+  knopf.textContent = ok ? "Kopiert" : "Bitte von Hand markieren";
+  setTimeout(() => { knopf.textContent = alt; }, 1600);
+}
+try {
+  const alt = JSON.parse(localStorage.getItem("ws2") || "{}");
+  for (const k of felder) if (alt[k]) $(k).value = alt[k];
+} catch (e) {}
+for (const k of felder) $(k).addEventListener("input", zeigen);
+document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => kopieren($(b.dataset.copy).textContent, b)));
+$("beispiel").addEventListener("click", () => { for (const k in beispiel) if (k !== "ich") $(k).value = beispiel[k]; zeigen(); });
+$("leeren").addEventListener("click", () => { for (const k of felder) $(k).value = ""; zeigen(); });
+$("alles").addEventListener("click", e => kopieren(instruktionen() + "\n\nMein Aha-Moment: " + $("aha").value.trim(), e.currentTarget));
+$("laden").addEventListener("click", () => {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([skill()], { type: "text/markdown" }));
+  a.download = "SKILL.md"; document.body.appendChild(a); a.click(); a.remove();
+});
+zeigen();
+</script>
+</body>
+</html>
