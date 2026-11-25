@@ -5,31 +5,34 @@ pünktlich bei Minute 28 schliessen.
 
 | Minute | Was | Wie | Material |
 |---|---|---|---|
-| 0–2 | Einstieg | Frage in die Runde: «Wer hat einer KI diese Woche zweimal dasselbe erklärt?» | Folie 1–2 |
-| 2–7 | Input | Drei Stufen (Prompt, Instruktionen, Skill-File), vier Teile (Rolle, Ziel, Vorgehen, Grenzen) | Folie 3–4 |
-| 7–11 | Demo | Dieselbe Frage ohne und mit Instruktionen; danach die Grenz-Frage | [vorher-nachher.md](beispiele/vorher-nachher.md), Folie 5 |
-| 11–13 | Skill-File | Aufbau zeigen, Beispiel aus der Arbeit (Skills im Team, anonymisiert) | Folie 6–7 |
-| 13–26 | Übung | Zwei Stufen zur Wahl: Instruktionen einrichten oder ein eigenes Skill-File schreiben; herumgehen und helfen | [UEBUNG.md](UEBUNG.md), Folie 8 |
-| 26–28 | Austausch | Zwei, drei Stimmen: Welcher Satz hat am meisten verändert? | |
-| 28–30 | Abschluss | Skills finden und prüfen, Link zum Material | Folie 9–10 |
+| 0–2 | Ankommen | Alle öffnen die Workshop-Seite und ihr eigenes KI-Tool. Frage in die Runde: «Wer hat einer KI diese Woche zweimal dasselbe erklärt?» | [Seite «Assistent bauen»](docs/assistent.html) |
+| 2–5 | Vorher | Alle stellen dieselbe Frage in einem leeren Chat. Zwei Personen lesen den ersten Satz ihrer Antwort vor. | Schritt 1 |
+| 5–13 | Bauen | Alle füllen die vier Felder aus (Rolle, Ziel, Vorgehen, Grenzen). Wer nicht weiterkommt, setzt das Beispiel ein und ändert es. Kurzer Input nur auf Zuruf. | Schritt 2 |
+| 13–18 | Nachher | Instruktionen einfügen, dieselbe Frage noch einmal. **Aha-Moment 1:** gleiche Frage, anderes Verhalten. Zwei Stimmen: Was ist anders? | Schritt 3 |
+| 18–22 | Grenze testen | Alle versuchen, den eigenen Assistenten aus der Rolle zu bringen. **Aha-Moment 2:** Er lehnt ab oder widerspricht. | Schritt 4 |
+| 22–27 | Tauschen | Zu zweit: Gerät tauschen, den Assistenten der anderen Person austricksen. Einen Satz nachschärfen. | Schritt 5 |
+| 27–30 | Abschluss | Jede Person liest ihren Aha-Satz vor. Hinweis auf das Skill-File für Geübte und auf das Learning Canvas. | Schritt 5 |
+
+Es gibt keinen Vortragsteil. Die drei Stufen (Prompt, Instruktionen, Skill-File) und das
+Beispiel aus der Arbeit erzählst du in ein, zwei Sätzen, während die Leute bauen oder
+wenn jemand fragt. Die Folien sind die Rückfallebene, falls es doch einen Beamer gibt.
+
+Geübte arbeiten ab Minute 5 im Abschnitt «Für Geübte» derselben Seite und bauen ein
+Skill-File. Bitte sie in Minute 22, als Tauschpartner für andere zu wirken.
 
 ## Vorbereiten
 
 - [ ] Folie 7 (Skills im Team): keinen Firmennamen nennen, keine internen Inhalte zeigen,
       keine Zahl zur Nutzung im Team (nicht gemessen).
 - [ ] [EINRICHTEN.md](EINRICHTEN.md) in den Tools nachprüfen.
-- [ ] Zwei Browser-Fenster für die Demo: leerer Chat und Projekt mit den
-      Instruktionen aus `beispiele/lern-sparring/`.
-- [ ] Entscheiden, wie die Teilnehmenden ans Material kommen: Repository
-      öffentlich schalten oder Vorlage und Übung ausdrucken.
-- [ ] Demo einmal ganz durchspielen. Die Antworten fallen jedes Mal anders
-      aus, das Muster sollte sichtbar bleiben.
+- [ ] Link oder QR-Code zur Workshop-Seite bereithalten (Zettel auf dem Tisch oder Chat der Kohorte).
+- [ ] Die Seite einmal ganz selbst durchspielen, mit dem Tool, das du im Workshop nutzt.
+      Die Antworten fallen jedes Mal anders aus, das Muster sollte sichtbar bleiben.
 
 ## Wenn die Zeit knapp wird
 
-Skill-File-Teil (Minute 11–13) auf einen Satz kürzen und auf das Material
-verweisen. Die Übung nicht kürzen: Der eingerichtete Assistent ist das, was
-die Leute mitnehmen sollen.
+Das Tauschen (Minute 22–27) auf zwei Minuten kürzen. Vorher und Nachher nie
+kürzen: Der Vergleich ist der Aha-Moment.
 
 ## Häufige Fragen
 

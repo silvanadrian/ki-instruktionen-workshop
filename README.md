@@ -20,6 +20,7 @@ Mal gleich verhält, zum Beispiel als Sparring-Partner für dein Lernvorhaben.
 
 | Datei | Wofür |
 |---|---|
+| [docs/](docs/) | **Workshop-Seiten fürs eigene Gerät:** «Assistent bauen» (Workshop 2) und «Ampel» (Workshop 4), ohne Beamer und ohne Papier |
 | [UEBUNG.md](UEBUNG.md) | Die Übung in zwei Stufen: Instruktionen oder eigenes Skill-File (für Teilnehmende) |
 | [vorlagen/instruktionen.md](vorlagen/instruktionen.md) | Vorlage: Rolle, Ziel, Vorgehen, Grenzen |
 | [vorlagen/skill/SKILL.md](vorlagen/skill/SKILL.md) | Vorlage für ein Skill-File |
