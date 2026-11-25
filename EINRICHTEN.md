@@ -1,9 +1,7 @@
 # Wo die Instruktionen hingehören
 
-> **Vor dem Workshop prüfen (Silvan):** Die Menünamen unten sind aus dem
-> Gedächtnis notiert und nicht am 25.11.2026 in den Tools nachgeprüft. Die
-> Anbieter benennen ihre Menüs oft um. Bitte einmal je Tool durchklicken und
-> korrigieren.
+> Die Anbieter benennen ihre Menüs oft um. Die Namen unten sind Anhaltspunkte (Stand
+> November 2026); such im Zweifel nach «Anweisungen», «Instructions» oder «Projekt».
 
 Es gibt in fast jedem Tool drei Orte. Je weiter unten, desto gezielter.
 

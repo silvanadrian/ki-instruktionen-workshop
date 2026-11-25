@@ -22,8 +22,6 @@ Skill-File. Bitte sie in Minute 22, als Tauschpartner für andere zu wirken.
 
 ## Vorbereiten
 
-- [ ] Folie 7 (Skills im Team): keinen Firmennamen nennen, keine internen Inhalte zeigen,
-      keine Zahl zur Nutzung im Team (nicht gemessen).
 - [ ] [EINRICHTEN.md](EINRICHTEN.md) in den Tools nachprüfen.
 - [ ] Link oder QR-Code zur Workshop-Seite bereithalten (Zettel auf dem Tisch oder Chat der Kohorte).
 - [ ] Die Seite einmal ganz selbst durchspielen, mit dem Tool, das du im Workshop nutzt.
