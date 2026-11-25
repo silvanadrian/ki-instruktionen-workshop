@@ -20,7 +20,7 @@ Mal gleich verhält, zum Beispiel als Sparring-Partner für dein Lernvorhaben.
 
 | Datei | Wofür |
 |---|---|
-| [UEBUNG.md](UEBUNG.md) | Die Übung Schritt für Schritt (für Teilnehmende) |
+| [UEBUNG.md](UEBUNG.md) | Die Übung in zwei Stufen: Instruktionen oder eigenes Skill-File (für Teilnehmende) |
 | [vorlagen/instruktionen.md](vorlagen/instruktionen.md) | Vorlage: Rolle, Ziel, Vorgehen, Grenzen |
 | [vorlagen/skill/SKILL.md](vorlagen/skill/SKILL.md) | Vorlage für ein Skill-File |
 | [beispiele/lern-sparring/](beispiele/lern-sparring/) | Fertiges Beispiel: Sparring-Partner fürs Lernvorhaben, als Instruktionen und als Skill |

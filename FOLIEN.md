@@ -18,15 +18,15 @@ Jede Folie hat Sprechernotizen. Der Text der Folien zum Nachlesen:
    [beispiele/vorher-nachher.md](beispiele/vorher-nachher.md).
 6. **Ein Skill-File ist eine Textdatei mit drei Teilen.** Name, Beschreibung,
    Anleitung.
-7. **Beispiel: ein Skill-File aus dem Studium.** Platzhalter, noch einsetzen.
-8. **Übung: Dein Sparring-Partner in 13 Minuten.** Ausfüllen, einrichten,
-   testen, schärfen, siehe [UEBUNG.md](UEBUNG.md).
+7. **Beispiel aus der Arbeit: Skills im Team.** Sammeln, teilen, pflegen
+   (anonymisiert, ohne Firmennamen und ohne Nutzungszahlen).
+8. **Übung: Dein Sparring-Partner in 13 Minuten.** Zwei Stufen zur Wahl:
+   Instruktionen oder ein eigenes Skill-File, siehe [UEBUNG.md](UEBUNG.md).
 9. **Skills von anderen: zuerst lesen, dann installieren.**
 10. **Das nimmst du mit.** Assistent, Vorlage, Beispiel, QR-Code zu diesem
     Repository.
 
 ## Offen
 
-- Folie 7: Skill-File aus dem Studium einsetzen.
 - Folie 10: Der QR-Code zeigt auf dieses Repository. Solange es privat ist,
   sehen die Teilnehmenden eine 404-Seite.

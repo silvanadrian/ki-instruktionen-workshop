@@ -8,16 +8,15 @@ pünktlich bei Minute 28 schliessen.
 | 0–2 | Einstieg | Frage in die Runde: «Wer hat einer KI diese Woche zweimal dasselbe erklärt?» | Folie 1–2 |
 | 2–7 | Input | Drei Stufen (Prompt, Instruktionen, Skill-File), vier Teile (Rolle, Ziel, Vorgehen, Grenzen) | Folie 3–4 |
 | 7–11 | Demo | Dieselbe Frage ohne und mit Instruktionen; danach die Grenz-Frage | [vorher-nachher.md](beispiele/vorher-nachher.md), Folie 5 |
-| 11–13 | Skill-File | Aufbau zeigen, Beispiel aus dem Studium | Folie 6–7 |
-| 13–26 | Übung | Alle richten ihren Assistenten ein; herumgehen und helfen | [UEBUNG.md](UEBUNG.md), Folie 8 |
+| 11–13 | Skill-File | Aufbau zeigen, Beispiel aus der Arbeit (Skills im Team, anonymisiert) | Folie 6–7 |
+| 13–26 | Übung | Zwei Stufen zur Wahl: Instruktionen einrichten oder ein eigenes Skill-File schreiben; herumgehen und helfen | [UEBUNG.md](UEBUNG.md), Folie 8 |
 | 26–28 | Austausch | Zwei, drei Stimmen: Welcher Satz hat am meisten verändert? | |
 | 28–30 | Abschluss | Skills finden und prüfen, Link zum Material | Folie 9–10 |
 
 ## Vorbereiten
 
-- [ ] Beispiel-Skill aus dem Studium einsetzen (Folie 7). Laut Ausschreibung
-      zeigen wir ein Skill-File, das im Studium tatsächlich im Einsatz ist.
-      Es liegt noch nicht in diesem Repository.
+- [ ] Folie 7 (Skills im Team): keinen Firmennamen nennen, keine internen Inhalte zeigen,
+      keine Zahl zur Nutzung im Team (nicht gemessen).
 - [ ] [EINRICHTEN.md](EINRICHTEN.md) in den Tools nachprüfen.
 - [ ] Zwei Browser-Fenster für die Demo: leerer Chat und Projekt mit den
       Instruktionen aus `beispiele/lern-sparring/`.
