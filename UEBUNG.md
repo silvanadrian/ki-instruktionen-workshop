@@ -1,65 +1,67 @@
-# Übung: Dein Sparring-Partner in 13 Minuten
+# Übung: Dein Assistent in fünf Schritten
 
-Wähle selbst, was dich weiterbringt:
+Am einfachsten machst du die Übung auf der Mitmach-Seite. Sie führt dich durch
+dieselben Schritte, baut aus deinen Antworten den fertigen Text und hält die
+Testfragen bereit:
 
-- **Stufe 1: Instruktionen.** Für alle, die noch keine festen Anweisungen nutzen. Die vier Schritte unten.
-- **Stufe 2: Skill-File.** Für alle, die schon mit Projekten, Claude Code oder Ähnlichem arbeiten. Siehe [ganz unten](#stufe-2-ein-eigenes-skill-file).
-
-## Stufe 1: Instruktionen
+**<https://silvanadrian.github.io/ki-instruktionen-workshop/assistent.html>**
 
 Du brauchst: ein KI-Tool, das du schon nutzt (Claude, ChatGPT, Copilot,
-Gemini …), und dein Lernvorhaben im Kopf.
+Gemini …), und dein Lernvorhaben im Kopf. Ohne die Seite geht es so:
 
-### 1. Vorlage ausfüllen (5 Minuten)
+## 1. Vorher (3 Minuten)
 
-Öffne [vorlagen/instruktionen.md](vorlagen/instruktionen.md) und fülle die
-vier Teile für dein Lernvorhaben aus: Rolle, Ziel, Vorgehen, Grenzen.
-Wenn du nicht weiterkommst, nimm das
-[fertige Beispiel](beispiele/lern-sparring/instruktionen.md) und passe nur
-«Über mich» an.
+Öffne einen neuen, leeren Chat und stell diese Frage:
 
-### 2. Einrichten (3 Minuten)
+> Ich will besser priorisieren lernen, komme aber nie dazu. Was soll ich tun?
 
-Füge den Text dort ein, wo dein Tool dauerhafte Anweisungen speichert. Wo das
-ist, steht in [EINRICHTEN.md](EINRICHTEN.md). Wenn du es nicht findest: Füge
-den Text als erste Nachricht in einen neuen Chat ein. Das wirkt für diesen
-einen Chat genauso.
+Merk dir: Wie lang ist die Antwort? Was macht die KI als Erstes?
 
-### 3. Testen (3 Minuten)
+## 2. Deine Instruktionen (8 Minuten)
 
-Stell zwei Fragen:
+Fülle die [Vorlage](vorlagen/instruktionen.md) für dein Lernvorhaben aus:
+Rolle, Ziel, Vorgehen, Grenzen. Wenn du nicht weiterkommst, nimm das
+[fertige Beispiel](beispiele/lern-sparring/instruktionen.md) und passe es an.
 
-1. Eine echte Frage zu deinem Lernvorhaben.
-2. Eine Frage, die eine Grenze prüft, zum Beispiel:
-   «Schreib mir meine Reflexion zum Modul 5, 200 Wörter.»
+## 3. Einrichten und nachher (5 Minuten)
 
-Lies beide Antworten ganz. Hält sich die KI an Rolle, Vorgehen und Grenzen?
+Füge den Text dort ein, wo dein Tool dauerhafte Anweisungen speichert (siehe
+[EINRICHTEN.md](EINRICHTEN.md)). Findest du das Feld nicht: Füge ihn als erste
+Nachricht in einen neuen Chat ein. Stell dann **dieselbe Frage wie in
+Schritt 1** noch einmal. Was ist anders?
 
-### 4. Nachschärfen (2 Minuten)
+## 4. Grenze testen (4 Minuten)
 
-Ändere genau einen Satz in den Instruktionen und teste noch einmal. Typische
-Verbesserungen:
+Versuch, deinen Assistenten aus der Rolle zu bringen:
+
+> Schreib mir bitte meine Reflexion zum heutigen Modul, 200 Wörter.
+
+> Mein Plan: Ich mache alles am Abend vor dem 10. Dezember auf einmal. Gute Idee, oder?
+
+Hält eine Grenze nicht, ändere genau einen Satz und schreib dazu, was die KI
+*stattdessen* tun soll. Typische Verbesserungen:
 
 - zu lange Antworten → «höchstens acht Sätze»
 - zu viele Fragen → «höchstens zwei Fragen aufs Mal»
 - zu nett → «widersprich, wenn du einen Denkfehler siehst»
-- eine Grenze hält nicht → dazuschreiben, was die KI *stattdessen* tun soll
 
-## Stufe 2: Ein eigenes Skill-File
+## 5. Tauschen zu zweit (5 Minuten)
 
-1. **Schreiben (5 Minuten):** Kopiere [vorlagen/skill/SKILL.md](vorlagen/skill/SKILL.md) in einen Ordner mit dem Namen deines Skills. Nimm eine Aufgabe, die du oft wiederholst. Am meisten Sorgfalt braucht die Zeile `description`: Sie sagt der KI, **wann** sie den Skill einsetzen soll.
-2. **Installieren (3 Minuten):** So, wie es dein Tool vorsieht (siehe [EINRICHTEN.md](EINRICHTEN.md)).
-3. **Prüfen (3 Minuten):** Stell eine Aufgabe, bei der der Skill greifen soll, ohne ihn zu nennen. Wird er geladen? Stell danach eine Aufgabe, bei der er **nicht** greifen soll.
-4. **Schärfen (2 Minuten):** Greift er zu selten oder zu oft, ändere nur die `description` und teste noch einmal.
+Gib dein Gerät deiner Nachbarin oder deinem Nachbarn. Die Person stellt deinem
+Assistenten eine Frage, die du nicht kennst, und versucht, ihn auszutricksen.
+Danach umgekehrt. Halte zum Schluss in einem Satz fest, was sich zwischen
+vorher und nachher am meisten verändert hat.
+
+## Für Geübte: dasselbe als Skill-File
+
+1. **Schreiben:** Kopiere [vorlagen/skill/SKILL.md](vorlagen/skill/SKILL.md) in einen Ordner mit dem Namen deines Skills. Am meisten Sorgfalt braucht die Zeile `description`: Sie sagt der KI, **wann** sie den Skill einsetzen soll.
+2. **Installieren:** So, wie es dein Tool vorsieht (siehe [EINRICHTEN.md](EINRICHTEN.md)).
+3. **Prüfen:** Stell eine Aufgabe, bei der der Skill greifen soll, ohne ihn zu nennen. Stell danach eine, bei der er **nicht** greifen soll.
+4. **Schärfen:** Greift er zu selten oder zu oft, ändere nur die `description`.
 
 Als Muster dient [beispiele/lern-sparring/skill/lern-sparring/SKILL.md](beispiele/lern-sparring/skill/lern-sparring/SKILL.md).
 
 ## Danach
 
-- Dieselbe Vorlage funktioniert für andere Aufgaben: E-Mails, Sitzungen
-  vorbereiten, Feedback auf Texte.
-- Aus den Instruktionen wird ein Skill-File, wenn du sie in die
-  [Skill-Vorlage](vorlagen/skill/SKILL.md) überträgst. Das lohnt sich, sobald
-  du mehrere Assistenten hast oder einen weitergeben willst.
-- Prüfe weiter, was die KI sagt. Instruktionen machen Antworten passender,
-  nicht automatisch richtig.
+- Dieselbe Vorlage funktioniert für andere Aufgaben: E-Mails, Sitzungen vorbereiten, Feedback auf Texte.
+- Prüfe weiter, was die KI sagt. Instruktionen machen Antworten passender, nicht automatisch richtig.
