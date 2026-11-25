@@ -4,7 +4,7 @@ Das Slide-Deck liegt in Google Slides, im Design des Modul-5-Decks:
 <https://docs.google.com/presentation/d/1pBWVdjshzJsAdRavO1wmsTG_UMklbOz5lLZsBvOXmJA/edit>
 
 Die Folien folgen denselben Schritten wie die
-[Mitmach-Seite](https://silvanadrian.github.io/ki-instruktionen-workshop/assistent.html).
+[Mitmach-Seite](https://ki.silvan.dev/2).
 Mit Beamer oder Bildschirm geben sie den Takt vor; ohne trägt die Seite allein.
 Jede Folie hat Sprechernotizen mit den Minuten.
 

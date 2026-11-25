@@ -4,7 +4,7 @@ Am einfachsten machst du die Übung auf der Mitmach-Seite. Sie führt dich durch
 dieselben Schritte, baut aus deinen Antworten den fertigen Text und hält die
 Testfragen bereit:
 
-**<https://silvanadrian.github.io/ki-instruktionen-workshop/assistent.html>**
+**<https://ki.silvan.dev/2>**
 
 Du brauchst: ein KI-Tool, das du schon nutzt (Claude, ChatGPT, Copilot,
 Gemini …), und dein Lernvorhaben im Kopf. Ohne die Seite geht es so:

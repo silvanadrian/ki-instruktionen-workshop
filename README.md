@@ -4,7 +4,7 @@ Material für Workshop 2 im Modul 5 von Future Work Skills («KI als Sparring im
 persönlichen Lernvorhaben», 26. November 2026). Der Workshop dauert 30 Minuten
 und findet zweimal statt (16:50 und 17:20).
 
-**Direkt mitmachen:** <https://silvanadrian.github.io/ki-instruktionen-workshop/>
+**Direkt mitmachen:** <https://ki.silvan.dev/>
 (läuft auf dem eigenen Gerät, ohne Anmeldung; Eingaben bleiben im Browser)
 
 ## Worum es geht
