@@ -25,6 +25,7 @@ Mal gleich verhält, zum Beispiel als Sparring-Partner für dein Lernvorhaben.
 | [vorlagen/skill/SKILL.md](vorlagen/skill/SKILL.md) | Vorlage für ein Skill-File |
 | [beispiele/lern-sparring/](beispiele/lern-sparring/) | Fertiges Beispiel: Sparring-Partner fürs Lernvorhaben, als Instruktionen und als Skill |
 | [beispiele/vorher-nachher.md](beispiele/vorher-nachher.md) | Dieselbe Frage ohne und mit Instruktionen (für die Demo) |
+| [druck/](druck/) | Einseitige Handouts zum Ausdrucken (Workshop 2 und Workshop 4), falls kein Beamer da ist |
 | [EINRICHTEN.md](EINRICHTEN.md) | Wo die Instruktionen in Claude, ChatGPT, Copilot und Gemini hingehören |
 | [ABLAUF.md](ABLAUF.md) | Moderationsplan für die 30 Minuten (für die Leitung) |
 | [FOLIEN.md](FOLIEN.md) | Text der Folien und Link zum Slide-Deck |
