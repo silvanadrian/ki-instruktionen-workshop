@@ -15,14 +15,15 @@
   .ampelreihe .gruen { border-color:#2E9E5B; } .ampelreihe .gelb { border-color:#F2C230; } .ampelreihe .rot { border-color:#D64545; }
   .satz { background:#fff; border:1px solid var(--line); border-radius:6px; padding:8px 10px; margin:.4em 0; font-weight:600; }
   @media (max-width:620px) { .ampelreihe { grid-template-columns:1fr; } }
-  @media print { main { padding:0; max-width:none; } body { font-size:12px; } .nichtdrucken { display:none; } .karte, .balken { break-inside:avoid; } }
+  @page { size:A4; margin:12mm; }
+  @media print { h1 { font-size:20px; } h2, .karte h2 { font-size:13px; } p { margin:.3em 0 .5em; } .karte { padding:8px 10px; margin:7px 0; } .balken { padding:8px 10px; margin:7px 0; } * { -webkit-print-color-adjust:exact; print-color-adjust:exact; } main { padding:0; max-width:none; } body { font-size:10.5px; line-height:1.35; } .klein { font-size:9.5px; } .karte li { margin:.1em 0; } .ampelreihe { gap:7px; } .nichtdrucken { display:none; } .karte, .balken { break-inside:avoid; } }
 </style>
 </head>
 <body>
 <main>
 <div class="kopf">Workshop 4 · Future Work Skills · Modul 5</div>
 <h1>Spickzettel: KI, Daten und Verantwortung</h1>
-<p class="klein nichtdrucken">Zum Speichern: Seite als Lesezeichen ablegen oder einen Screenshot machen.</p>
+<p class="nichtdrucken"><a href="spickzettel-ki-daten-verantwortung.pdf" download>Als PDF herunterladen</a> <span class="klein">oder die Seite als Lesezeichen ablegen.</span></p>
 
 <h2>1. Vor dem Eingeben: die Ampel</h2>
 <div class="ampelreihe">
@@ -53,7 +54,17 @@
 </div>
 
 <div class="karte" style="background:var(--grey)">
-  <h2>4. Meine Regeln</h2>
+  <h2>4. Die KI bereitet vor, ein Mensch entscheidet</h2>
+  <p>Beispiel Mietbewerbung und Schadensmeldung in einer Immobilienverwaltung:</p>
+  <ul>
+    <li><b>Die KI darf vorbereiten:</b> Formular vorausfüllen, prüfen, ob etwas fehlt, eine Schadensmeldung einordnen, an die zuständige Person weiterleiten.</li>
+    <li><b>Ein Mensch entscheidet:</b> wer die Wohnung bekommt, ob eine Bewerbung abgelehnt wird, wer den Schaden bezahlt. Er kann die Einordnung der KI korrigieren.</li>
+  </ul>
+  <p class="klein">EU AI Act: menschliche Aufsicht bei hohem Risiko. Schweiz: Datenschutzgesetz Art. 21 zu automatisierten Einzelentscheiden.</p>
+</div>
+
+<div class="karte" style="background:var(--grey)">
+  <h2>5. Meine Regeln</h2>
   <ul>
     <li>Ich gebe keine … ein.</li>
     <li>Bevor ich etwas übernehme, …</li>
