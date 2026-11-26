@@ -3,139 +3,69 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Workshop 4: KI, Daten und Verantwortung</title>
+<title>Spickzettel: KI, Daten und Verantwortung</title>
 <link rel="stylesheet" href="stil.css">
+<style>
+  .karte { border-radius:8px; padding:12px 14px; margin:10px 0; }
+  .karte h2 { font-size:17px; margin:0 0 .3em; }
+  .karte ul { margin:.2em 0; padding-left:1.1em; }
+  .karte li { margin:.2em 0; }
+  .ampelreihe { display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; }
+  .ampelreihe .karte { margin:0; border-top:6px solid; }
+  .ampelreihe .gruen { border-color:#2E9E5B; } .ampelreihe .gelb { border-color:#F2C230; } .ampelreihe .rot { border-color:#D64545; }
+  .satz { background:#fff; border:1px solid var(--line); border-radius:6px; padding:8px 10px; margin:.4em 0; font-weight:600; }
+  @media (max-width:620px) { .ampelreihe { grid-template-columns:1fr; } }
+  @media print { main { padding:0; max-width:none; } body { font-size:12px; } .nichtdrucken { display:none; } .karte, .balken { break-inside:avoid; } }
+</style>
 </head>
 <body>
 <main>
 <div class="kopf">Workshop 4 · Future Work Skills · Modul 5</div>
-<h1>KI, Daten und Verantwortung</h1>
-<p><b>Zum Mitnehmen.</b> Hier steht, worauf du achten solltest, und du kannst deine Ampel und deine Regeln festhalten. Was du eintippst, bleibt in deinem Browser und wird nirgends hochgeladen.</p>
+<h1>Spickzettel: KI, Daten und Verantwortung</h1>
+<p class="klein nichtdrucken">Zum Speichern: Seite als Lesezeichen ablegen oder einen Screenshot machen.</p>
 
-<section class="schritt">
-  <h2>Checkliste: Einstellungen deines KI-Tools</h2>
-  <p>Die Menüs heissen in jedem Tool etwas anders. Such nach diesen drei Punkten.</p>
-  <ul class="pruef">
-    <li><label><input type="checkbox" data-k="c1"> Training: Werden meine Chats genutzt, um das Modell zu trainieren? Ausschalten, wenn das Tool es anbietet.</label></li>
-    <li><label><input type="checkbox" data-k="c2"> Gedächtnis: Was hat sich das Tool über mich gemerkt? Ansehen, Falsches und Heikles löschen.</label></li>
-    <li><label><input type="checkbox" data-k="c3"> Verlauf: Wie lange bleibt mein Chatverlauf gespeichert, und kann ich ihn löschen?</label></li>
+<h2>1. Vor dem Eingeben: die Ampel</h2>
+<div class="ampelreihe">
+  <div class="karte gruen"><h2>Grün: unbedenklich</h2><ul><li>Öffentliche Informationen</li><li>Eigene Ideen und Entwürfe</li><li>Anonymisierte Beispiele</li></ul></div>
+  <div class="karte gelb"><h2>Gelb: abwägen</h2><ul><li>Eigene persönliche Angaben</li><li>Interne Unterlagen, wenn der Arbeitgeber es erlaubt</li><li>Fremde Texte und Bilder</li></ul></div>
+  <div class="karte rot"><h2>Rot: nicht eingeben</h2><ul><li>Daten über andere Personen</li><li>Vertrauliches</li><li>Zugangsdaten</li></ul></div>
+</div>
+<p><b>Darauf achten:</b> Anonymisieren macht aus Gelb oder Rot oft Grün: Namen, Firma und Zahlen ersetzen. Interne Regeln gehen vor. Im Zweifel eine Stufe strenger einordnen.</p>
+
+<div class="karte" style="background:var(--peach)">
+  <h2>2. Einmal einstellen</h2>
+  <ul>
+    <li><b>Training:</b> Ausschalten, wenn dein Tool es anbietet.</li>
+    <li><b>Gedächtnis:</b> Ansehen, was gespeichert ist. Falsches und Heikles löschen.</li>
+    <li><b>Verlauf:</b> Nachsehen, wie lange er bleibt, und Altes löschen.</li>
+    <li><b>Heikle Themen:</b> Einen temporären Chat nutzen, wenn es einen gibt.</li>
+    <li><b>Konto der Firma:</b> Dort gelten die Regeln deines Arbeitgebers.</li>
   </ul>
-  <p class="klein"><b>Darauf achten:</b> Für heikle Themen einen temporären Chat nutzen, wenn es einen gibt. Im Konto der Firma gelten die Regeln deines Arbeitgebers. Was die KI auf «Was weisst du über mich?» antwortet, ist nicht verlässlich; verlässlich sind die Einstellungen.</p>
-  <div class="frage"><span id="q1">Was weisst du über mich? Liste alles auf.</span><button class="hell" data-copy="q1">Kopieren</button></div>
-  <label for="fund">Was hat dich überrascht?</label>
-  <textarea id="fund" placeholder="Ich wusste nicht, dass …"></textarea>
-</section>
+  <p class="klein">Die Menüs heissen in jedem Tool anders. Was die KI über sich selbst sagt, ist nicht verlässlich; verlässlich sind die Einstellungen.</p>
+</div>
 
-<section class="schritt">
-  <h2>Die Ampel: Was darf in den Chat?</h2>
-  <p class="klein"><b>Grün:</b> öffentlich, eigene Ideen, anonymisiert. <b>Gelb:</b> eigene persönliche Angaben, interne Unterlagen, wenn dein Arbeitgeber es erlaubt, fremde Texte und Bilder. <b>Rot:</b> Daten über andere Personen, Vertrauliches, Zugangsdaten.</p>
-  <p>Trag ein, was die KI für dein Lernvorhaben bräuchte, und ordne jede Angabe ein.</p>
-  <div class="zeile">
-    <input type="text" id="neu" placeholder="z. B. mein Lernziel, Feedback meiner Chefin, Kundenliste" aria-label="Neue Angabe">
-    <button id="dazu">Hinzufügen</button>
-  </div>
-  <div id="liste" aria-live="polite"></div>
-  <p class="klein" id="zaehler"></p>
-  <p class="klein"><b>Darauf achten:</b> Anonymisieren macht aus Gelb oder Rot oft Grün: Ersetze Namen, Firma und Zahlen. Daten über andere sind nicht deine Entscheidung. Interne Regeln gehen vor. Im Zweifel eine Stufe strenger einordnen.</p>
-</section>
+<div class="karte" style="background:var(--peach)">
+  <h2>3. Vor dem Übernehmen: zwei Fragen</h2>
+  <p><b>Stimmt es?</b> Was sicher klingt und fertig aussieht, glauben wir zu schnell (Automation Bias). Frag nach und prüfe mindestens eine Angabe selbst.</p>
+  <div class="satz">«Woher weisst du das? Wie sicher bist du, und was davon ist geraten?»</div>
+  <p><b>Darf ich es verwenden?</b> Rein KI-erzeugte Inhalte sind in der Schweiz nicht urheberrechtlich geschützt. Gleicht das Ergebnis einem bestehenden Werk oder einer Person?</p>
+  <p><b>Welche Sicht fehlt?</b> Die KI gibt Muster aus ihren Daten wieder (Bias). Entscheide über Menschen nie allein auf eine KI stützen.</p>
+</div>
 
-<section class="schritt">
-  <h2>Zwei Fragen vor dem Übernehmen</h2>
-  <p><b>Stimmt es?</b> Was sicher klingt und fertig aussieht, glauben wir zu schnell. Das heisst <b>Automation Bias</b>. Frag nach und prüfe mindestens eine Angabe selbst.</p>
-  <div class="frage"><span id="q2">Woher weisst du das? Wie sicher bist du, und was davon ist geraten?</span><button class="hell" data-copy="q2">Kopieren</button></div>
-  <p><b>Darf ich es verwenden?</b> Rein KI-erzeugte Inhalte sind in der Schweiz nicht urheberrechtlich geschützt. Und: Gleicht das Ergebnis einem bestehenden Werk?</p>
-  <p class="klein"><b>Darauf achten:</b> Die KI gibt Muster aus ihren Daten wieder (Bias): Frag «Welche Sicht fehlt hier?». Entscheide über Menschen nie allein auf eine KI stützen.</p>
-  <label for="pruef">Welche Angabe hast du geprüft, und was kam heraus?</label>
-  <textarea id="pruef" placeholder="Die KI sagte …, tatsächlich …"></textarea>
-</section>
-
-<section class="schritt">
-  <h2>Meine drei Regeln</h2>
-  <p>Wo setzt du KI in deinem Lernvorhaben ein, und wo verzichtest du bewusst?</p>
-  <label for="r1">Was ich nicht eingebe</label><input type="text" id="r1" placeholder="Ich gebe keine …">
-  <label for="r2">Wie ich prüfe</label><input type="text" id="r2" placeholder="Bevor ich etwas übernehme, …">
-  <label for="r3">Wo ich verzichte</label><input type="text" id="r3" placeholder="Für … nutze ich KI bewusst nicht, weil …">
-  <div class="zeile"><button id="alles">Ampel und Regeln kopieren (fürs Learning Canvas)</button></div>
-</section>
+<div class="karte" style="background:var(--grey)">
+  <h2>4. Meine Regeln</h2>
+  <ul>
+    <li>Ich gebe keine … ein.</li>
+    <li>Bevor ich etwas übernehme, …</li>
+    <li>Für … nutze ich KI bewusst nicht, weil …</li>
+  </ul>
+</div>
 
 <div class="balken"><b>Merke:</b> Hinterfragen ist nicht nur Sache der Anbieter, sondern auch unsere eigene.</div>
 
-<section class="schritt grau">
-  <h2>Zum Nachlesen</h2>
-  <p><b>Urheberrecht:</b> Darfst du das Material hochladen? Rein KI-erzeugte Inhalte sind in der Schweiz nicht urheberrechtlich geschützt. Gleicht das Ergebnis einem bestehenden Werk?</p>
-  <p><b>EU AI Act:</b> Regeln nach Risiko. Bei hohem Risiko, zum Beispiel KI bei Bewerbungen, muss ein Mensch überwachen und eingreifen können.</p>
-  <p><b>Schweiz:</b> kein eigenes KI-Gesetz. Der AI Act betrifft aber Firmen mit Kundschaft in der EU.</p>
-  <p class="klein">Stand November 2026. Keine Rechtsberatung; die Rechtslage zu KI ist in Bewegung.</p>
-</section>
+<p class="klein"><b>EU AI Act:</b> Regeln nach Risiko. Bei hohem Risiko, zum Beispiel KI bei Bewerbungen, muss ein Mensch überwachen und eingreifen können. <b>Schweiz:</b> kein eigenes KI-Gesetz; der AI Act betrifft aber Firmen mit Kundschaft in der EU. Stand November 2026. Keine Rechtsberatung; die Rechtslage zu KI ist in Bewegung.</p>
 
-<p class="klein"><a href="index.html">Zur Übersicht</a></p>
+<p class="klein nichtdrucken"><a href="index.html">Zur Übersicht</a></p>
 </main>
-
-<script>
-const $ = id => document.getElementById(id);
-const farben = { gruen: "Grün", gelb: "Gelb", rot: "Rot" };
-let stand = { items: [], fund: "", pruef: "", r1: "", r2: "", r3: "", c1: false, c2: false, c3: false };
-try { stand = Object.assign(stand, JSON.parse(localStorage.getItem("ws4") || "{}")); } catch (e) {}
-function sichern() { try { localStorage.setItem("ws4", JSON.stringify(stand)); } catch (e) {} }
-
-function zeichnen() {
-  const liste = $("liste"); liste.textContent = "";
-  stand.items.forEach((it, i) => {
-    const div = document.createElement("div"); div.className = "eintrag ampel " + (it.farbe || "");
-    const span = document.createElement("span"); span.textContent = it.text; div.appendChild(span);
-    for (const f in farben) {
-      const b = document.createElement("button"); b.type = "button"; b.textContent = farben[f];
-      b.className = it.farbe === f ? "" : "hell"; b.setAttribute("aria-pressed", it.farbe === f ? "true" : "false");
-      b.addEventListener("click", () => { stand.items[i].farbe = f; sichern(); zeichnen(); });
-      div.appendChild(b);
-    }
-    const weg = document.createElement("button"); weg.type = "button"; weg.className = "hell"; weg.textContent = "Entfernen";
-    weg.setAttribute("aria-label", "Entfernen: " + it.text);
-    weg.addEventListener("click", () => { stand.items.splice(i, 1); sichern(); zeichnen(); });
-    div.appendChild(weg);
-    liste.appendChild(div);
-  });
-  const n = f => stand.items.filter(it => it.farbe === f).length;
-  $("zaehler").textContent = stand.items.length
-    ? "Grün: " + n("gruen") + " · Gelb: " + n("gelb") + " · Rot: " + n("rot") + " · noch offen: " + stand.items.filter(it => !it.farbe).length
-    : "Noch keine Angaben.";
-}
-function dazu() {
-  const t = $("neu").value.trim(); if (!t) return;
-  stand.items.push({ text: t, farbe: "" }); $("neu").value = ""; sichern(); zeichnen(); $("neu").focus();
-}
-$("dazu").addEventListener("click", dazu);
-$("neu").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); dazu(); } });
-for (const k of ["fund", "pruef", "r1", "r2", "r3"]) { $(k).value = stand[k] || ""; $(k).addEventListener("input", () => { stand[k] = $(k).value; sichern(); }); }
-document.querySelectorAll("input[type=checkbox][data-k]").forEach(c => {
-  c.checked = !!stand[c.dataset.k];
-  c.addEventListener("change", () => { stand[c.dataset.k] = c.checked; sichern(); });
-});
-async function kopieren(text, knopf) {
-  let ok = true;
-  try { await navigator.clipboard.writeText(text); }
-  catch (e) {
-    const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select();
-    try { ok = document.execCommand("copy"); } catch (e2) { ok = false; }
-    ta.remove();
-  }
-  const alt = knopf.textContent;
-  knopf.textContent = ok ? "Kopiert" : "Bitte von Hand markieren";
-  setTimeout(() => { knopf.textContent = alt; }, 1600);
-}
-document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => kopieren($(b.dataset.copy).textContent, b)));
-$("alles").addEventListener("click", e => {
-  const zeilen = ["Meine Ampel"];
-  for (const f in farben) {
-    const xs = stand.items.filter(it => it.farbe === f).map(it => it.text);
-    zeilen.push(farben[f] + ": " + (xs.length ? xs.join("; ") : "–"));
-  }
-  zeilen.push("", "Meine drei Regeln", "1. " + (stand.r1 || "–"), "2. " + (stand.r2 || "–"), "3. " + (stand.r3 || "–"));
-  if (stand.fund) zeilen.push("", "Was mich überrascht hat: " + stand.fund);
-  if (stand.pruef) zeilen.push("", "Was ich nachgeprüft habe: " + stand.pruef);
-  kopieren(zeilen.join("\n"), e.currentTarget);
-});
-zeichnen();
-</script>
 </body>
 </html>
