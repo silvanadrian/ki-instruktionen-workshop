@@ -10,32 +10,26 @@
 <main>
 <div class="kopf">Workshop 4 · Future Work Skills · Modul 5</div>
 <h1>KI, Daten und Verantwortung</h1>
-<p>Du arbeitest in deinem eigenen KI-Tool. Diese Seite führt dich durch fünf Schritte. Was du hier eintippst, bleibt in deinem Browser und wird nirgends hochgeladen.</p>
-
-<section class="schritt grau">
-  <h2><span class="nr">1</span>Was weiss deine KI über dich? <span class="zeit">3 Min.</span></h2>
-  <p>Öffne das KI-Tool, das du am meisten nutzt, und stell diese Frage. Lies die Antwort in Ruhe.</p>
-  <div class="frage"><span id="q1">Was weisst du über mich? Liste alles auf, was du aus früheren Gesprächen, aus deinem Gedächtnis oder aus meinen Einstellungen über mich weisst.</span><button class="hell" data-copy="q1">Kopieren</button></div>
-  <p class="klein">Je nach Tool und Einstellung kommt viel, wenig oder nichts. Auch «nichts» ist eine Antwort: Dann speichert dein Tool keine Erinnerungen, oder die Funktion ist ausgeschaltet.</p>
-</section>
+<p><b>Zum Mitnehmen.</b> Hier steht, worauf du achten solltest, und du kannst deine Ampel und deine Regeln festhalten. Was du eintippst, bleibt in deinem Browser und wird nirgends hochgeladen.</p>
 
 <section class="schritt">
-  <h2><span class="nr">2</span>Einstellungen prüfen <span class="zeit">5 Min.</span></h2>
-  <p>Such in den Einstellungen deines KI-Tools nach diesen drei Punkten. Die Menüs heissen überall etwas anders; frag ruhig deine Nachbarin oder deinen Nachbarn.</p>
+  <h2>Checkliste: Einstellungen deines KI-Tools</h2>
+  <p>Die Menüs heissen in jedem Tool etwas anders. Such nach diesen drei Punkten.</p>
   <ul class="pruef">
-    <li><label><input type="checkbox" data-k="c1"> Werden meine Chats genutzt, um das Modell zu trainieren? Kann ich das ausschalten?</label></li>
-    <li><label><input type="checkbox" data-k="c2"> Merkt sich das Tool Dinge über mich (Gedächtnis, Memory)? Kann ich sie ansehen und löschen?</label></li>
-    <li><label><input type="checkbox" data-k="c3"> Wie lange bleibt mein Chatverlauf gespeichert, und kann ich ihn löschen?</label></li>
+    <li><label><input type="checkbox" data-k="c1"> Training: Werden meine Chats genutzt, um das Modell zu trainieren? Ausschalten, wenn das Tool es anbietet.</label></li>
+    <li><label><input type="checkbox" data-k="c2"> Gedächtnis: Was hat sich das Tool über mich gemerkt? Ansehen, Falsches und Heikles löschen.</label></li>
+    <li><label><input type="checkbox" data-k="c3"> Verlauf: Wie lange bleibt mein Chatverlauf gespeichert, und kann ich ihn löschen?</label></li>
   </ul>
-  <p class="klein"><b>Darauf achten:</b> Training ausschalten, wenn dein Tool es anbietet. Gespeichertes ansehen, Falsches und Heikles löschen. Für heikle Themen einen temporären Chat nutzen, wenn es einen gibt. Im Konto der Firma gelten die Regeln deines Arbeitgebers.</p>
+  <p class="klein"><b>Darauf achten:</b> Für heikle Themen einen temporären Chat nutzen, wenn es einen gibt. Im Konto der Firma gelten die Regeln deines Arbeitgebers. Was die KI auf «Was weisst du über mich?» antwortet, ist nicht verlässlich; verlässlich sind die Einstellungen.</p>
+  <div class="frage"><span id="q1">Was weisst du über mich? Liste alles auf.</span><button class="hell" data-copy="q1">Kopieren</button></div>
   <label for="fund">Was hat dich überrascht?</label>
   <textarea id="fund" placeholder="Ich wusste nicht, dass …"></textarea>
 </section>
 
 <section class="schritt">
-  <h2><span class="nr">3</span>Dein Lernvorhaben durch die Ampel <span class="zeit">6 Min.</span></h2>
-  <p>Welche Angaben bräuchte die KI, um dir bei deinem Lernvorhaben zu helfen? Trag sie ein und ordne jede ein.</p>
+  <h2>Die Ampel: Was darf in den Chat?</h2>
   <p class="klein"><b>Grün:</b> öffentlich, eigene Ideen, anonymisiert. <b>Gelb:</b> eigene persönliche Angaben, interne Unterlagen, wenn dein Arbeitgeber es erlaubt, fremde Texte und Bilder. <b>Rot:</b> Daten über andere Personen, Vertrauliches, Zugangsdaten.</p>
+  <p>Trag ein, was die KI für dein Lernvorhaben bräuchte, und ordne jede Angabe ein.</p>
   <div class="zeile">
     <input type="text" id="neu" placeholder="z. B. mein Lernziel, Feedback meiner Chefin, Kundenliste" aria-label="Neue Angabe">
     <button id="dazu">Hinzufügen</button>
@@ -46,10 +40,9 @@
 </section>
 
 <section class="schritt">
-  <h2><span class="nr">4</span>Nachfragen und prüfen <span class="zeit">4 Min.</span></h2>
-  <p>Geh zurück zur Antwort aus Schritt 1 (oder zu einer anderen Antwort deiner KI) und frag nach:</p>
+  <h2>Zwei Fragen vor dem Übernehmen</h2>
+  <p><b>Stimmt es?</b> Was sicher klingt und fertig aussieht, glauben wir zu schnell. Das heisst <b>Automation Bias</b>. Frag nach und prüfe mindestens eine Angabe selbst.</p>
   <div class="frage"><span id="q2">Woher weisst du das? Wie sicher bist du, und was davon ist geraten?</span><button class="hell" data-copy="q2">Kopieren</button></div>
-  <p><b>Stimmt es?</b> Was sicher klingt und fertig aussieht, glauben wir zu schnell. Das heisst <b>Automation Bias</b>. Prüfe mindestens eine Angabe selbst.</p>
   <p><b>Darf ich es verwenden?</b> Rein KI-erzeugte Inhalte sind in der Schweiz nicht urheberrechtlich geschützt. Und: Gleicht das Ergebnis einem bestehenden Werk?</p>
   <p class="klein"><b>Darauf achten:</b> Die KI gibt Muster aus ihren Daten wieder (Bias): Frag «Welche Sicht fehlt hier?». Entscheide über Menschen nie allein auf eine KI stützen.</p>
   <label for="pruef">Welche Angabe hast du geprüft, und was kam heraus?</label>
@@ -57,13 +50,12 @@
 </section>
 
 <section class="schritt">
-  <h2><span class="nr">5</span>Drei eigene Regeln <span class="zeit">5 Min.</span></h2>
-  <p>Wo setzt du KI in deinem Lernvorhaben ein, und wo verzichtest du bewusst? Formuliere drei Regeln, an die du dich hältst.</p>
-  <label for="r1">Regel 1</label><input type="text" id="r1" placeholder="Ich gebe keine …">
-  <label for="r2">Regel 2</label><input type="text" id="r2" placeholder="Bevor ich etwas übernehme, …">
-  <label for="r3">Regel 3</label><input type="text" id="r3" placeholder="Für … nutze ich KI bewusst nicht, weil …">
+  <h2>Meine drei Regeln</h2>
+  <p>Wo setzt du KI in deinem Lernvorhaben ein, und wo verzichtest du bewusst?</p>
+  <label for="r1">Was ich nicht eingebe</label><input type="text" id="r1" placeholder="Ich gebe keine …">
+  <label for="r2">Wie ich prüfe</label><input type="text" id="r2" placeholder="Bevor ich etwas übernehme, …">
+  <label for="r3">Wo ich verzichte</label><input type="text" id="r3" placeholder="Für … nutze ich KI bewusst nicht, weil …">
   <div class="zeile"><button id="alles">Ampel und Regeln kopieren (fürs Learning Canvas)</button></div>
-  <p>Tausch dich danach zu zweit aus: eine Regel und der Grund dafür.</p>
 </section>
 
 <div class="balken"><b>Merke:</b> Hinterfragen ist nicht nur Sache der Anbieter, sondern auch unsere eigene.</div>
