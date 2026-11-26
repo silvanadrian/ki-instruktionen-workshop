@@ -6,75 +6,87 @@
 <title>Spickzettel: KI, Daten und Verantwortung</title>
 <link rel="stylesheet" href="stil.css">
 <style>
-  .karte { border-radius:8px; padding:12px 14px; margin:10px 0; }
-  .karte h2 { font-size:17px; margin:0 0 .3em; }
-  .karte ul { margin:.2em 0; padding-left:1.1em; }
-  .karte li { margin:.2em 0; }
+  section { margin:18px 0; }
+  .karte { background:var(--peach); border-radius:8px; padding:12px 14px; }
+  .karte ul, .farbe ul { margin:.2em 0; padding-left:1.1em; }
+  .karte li, .farbe li { margin:.2em 0; }
+  .karte p:last-child { margin-bottom:0; }
   .ampelreihe { display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; }
-  .ampelreihe .karte { margin:0; border-top:6px solid; }
-  .ampelreihe .gruen { border-color:#2E9E5B; } .ampelreihe .gelb { border-color:#F2C230; } .ampelreihe .rot { border-color:#D64545; }
+  .farbe { border-radius:8px; border-top:6px solid; padding:10px 14px; }
+  .farbe h3 { font-size:16px; margin:0 0 .3em; color:var(--navy); }
+  .farbe.gruen { border-color:#2E9E5B; } .farbe.gelb { border-color:#F2C230; } .farbe.rot { border-color:#D64545; }
   .satz { background:#fff; border:1px solid var(--line); border-radius:6px; padding:8px 10px; margin:.4em 0; font-weight:600; }
   @media (max-width:620px) { .ampelreihe { grid-template-columns:1fr; } }
+
   @page { size:A4; margin:12mm; }
-  @media print { h1 { font-size:20px; } h2, .karte h2 { font-size:13px; } p { margin:.3em 0 .5em; } .karte { padding:8px 10px; margin:7px 0; } .balken { padding:8px 10px; margin:7px 0; } * { -webkit-print-color-adjust:exact; print-color-adjust:exact; } main { padding:0; max-width:none; } body { font-size:10.5px; line-height:1.35; } .klein { font-size:9.5px; } .karte li { margin:.1em 0; } .ampelreihe { gap:7px; } .nichtdrucken { display:none; } .karte, .balken { break-inside:avoid; } }
+  @media print {
+    * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    body { font-size:11px; line-height:1.4; }
+    main { padding:0; max-width:none; }
+    h1 { font-size:20px; }
+    h2 { font-size:14px; }
+    .farbe h3 { font-size:12px; }
+    .klein { font-size:10px; }
+    section { margin:12px 0; break-inside:avoid; }
+    .nichtdrucken { display:none; }
+  }
 </style>
 </head>
 <body>
 <main>
 <div class="kopf">Workshop 4 · Future Work Skills · Modul 5</div>
 <h1>Spickzettel: KI, Daten und Verantwortung</h1>
-<p class="nichtdrucken"><a href="spickzettel-ki-daten-verantwortung.pdf" download>Als PDF herunterladen</a> <span class="klein">oder die Seite als Lesezeichen ablegen.</span></p>
+<p class="nichtdrucken"><a href="spickzettel-ki-daten-verantwortung.pdf" download>Als PDF herunterladen</a></p>
 
-<h2>1. Vor dem Eingeben: die Ampel</h2>
-<div class="ampelreihe">
-  <div class="karte gruen"><h2>Grün: unbedenklich</h2><ul><li>Öffentliche Informationen</li><li>Eigene Ideen und Entwürfe</li><li>Anonymisierte Beispiele</li></ul></div>
-  <div class="karte gelb"><h2>Gelb: abwägen</h2><ul><li>Eigene persönliche Angaben</li><li>Interne Unterlagen, wenn der Arbeitgeber es erlaubt</li><li>Fremde Texte und Bilder</li></ul></div>
-  <div class="karte rot"><h2>Rot: nicht eingeben</h2><ul><li>Daten über andere Personen</li><li>Vertrauliches</li><li>Zugangsdaten</li></ul></div>
-</div>
-<p><b>Darauf achten:</b> Anonymisieren macht aus Gelb oder Rot oft Grün: Namen, Firma und Zahlen ersetzen. Interne Regeln gehen vor. Im Zweifel eine Stufe strenger einordnen.</p>
+<section>
+  <h2>1. Vor dem Eingeben: die Ampel</h2>
+  <div class="ampelreihe">
+    <div class="farbe gruen"><h3>Grün: unbedenklich</h3><ul><li>Öffentliche Informationen</li><li>Eigene Ideen und Entwürfe</li><li>Anonymisierte Beispiele</li></ul></div>
+    <div class="farbe gelb"><h3>Gelb: abwägen</h3><ul><li>Eigene persönliche Angaben</li><li>Interne Unterlagen, wenn der Arbeitgeber es erlaubt</li><li>Fremde Texte und Bilder</li></ul></div>
+    <div class="farbe rot"><h3>Rot: nicht eingeben</h3><ul><li>Daten über andere Personen</li><li>Vertrauliches</li><li>Zugangsdaten</li></ul></div>
+  </div>
+  <p>Anonymisieren macht aus Gelb oder Rot oft Grün: Namen, Firma und Zahlen ersetzen. Interne Regeln gehen vor. Im Zweifel eine Stufe strenger einordnen.</p>
+</section>
 
-<div class="karte" style="background:var(--peach)">
+<section>
   <h2>2. Einmal einstellen</h2>
-  <ul>
-    <li><b>Training:</b> Ausschalten, wenn dein Tool es anbietet.</li>
-    <li><b>Gedächtnis:</b> Ansehen, was gespeichert ist. Falsches und Heikles löschen.</li>
-    <li><b>Verlauf:</b> Nachsehen, wie lange er bleibt, und Altes löschen.</li>
-    <li><b>Heikle Themen:</b> Einen temporären Chat nutzen, wenn es einen gibt.</li>
-    <li><b>Konto der Firma:</b> Dort gelten die Regeln deines Arbeitgebers.</li>
-  </ul>
-  <p class="klein">Die Menüs heissen in jedem Tool anders. Was die KI über sich selbst sagt, ist nicht verlässlich; verlässlich sind die Einstellungen.</p>
-</div>
+  <div class="karte">
+    <ul>
+      <li><b>Training:</b> Ausschalten, wenn dein Tool es anbietet.</li>
+      <li><b>Gedächtnis:</b> Ansehen, was gespeichert ist. Falsches und Heikles löschen.</li>
+      <li><b>Verlauf:</b> Nachsehen, wie lange er bleibt, und Altes löschen.</li>
+      <li><b>Heikle Themen:</b> Einen temporären Chat nutzen, wenn es einen gibt.</li>
+      <li><b>Konto der Firma:</b> Dort gelten die Regeln deines Arbeitgebers.</li>
+    </ul>
+    <p class="klein">Die Menüs heissen in jedem Tool anders. Was die KI über sich selbst sagt, ist nicht verlässlich; verlässlich sind die Einstellungen.</p>
+  </div>
+</section>
 
-<div class="karte" style="background:var(--peach)">
-  <h2>3. Vor dem Übernehmen: zwei Fragen</h2>
-  <p><b>Stimmt es?</b> Was sicher klingt und fertig aussieht, glauben wir zu schnell (Automation Bias). Frag nach und prüfe mindestens eine Angabe selbst.</p>
-  <div class="satz">«Woher weisst du das? Wie sicher bist du, und was davon ist geraten?»</div>
-  <p><b>Darf ich es verwenden?</b> Rein KI-erzeugte Inhalte sind in der Schweiz nicht urheberrechtlich geschützt. Gleicht das Ergebnis einem bestehenden Werk oder einer Person?</p>
-  <p><b>Welche Sicht fehlt?</b> Die KI gibt Muster aus ihren Daten wieder (Bias). Entscheide über Menschen nie allein auf eine KI stützen.</p>
-</div>
+<section>
+  <h2>3. Vor dem Übernehmen: drei Fragen</h2>
+  <div class="karte">
+    <p><b>Stimmt es?</b> Was sicher klingt und fertig aussieht, glauben wir zu schnell (Automation Bias). Frag nach und prüfe mindestens eine Angabe selbst.</p>
+    <div class="satz">«Woher weisst du das? Wie sicher bist du, und was davon ist geraten?»</div>
+    <p><b>Darf ich es verwenden?</b> Rein KI-erzeugte Inhalte sind in der Schweiz nicht urheberrechtlich geschützt. Gleicht das Ergebnis einem bestehenden Werk oder einer Person?</p>
+    <p><b>Welche Sicht fehlt?</b> Die KI gibt Muster aus ihren Daten wieder (Bias).</p>
+  </div>
+</section>
 
-<div class="karte" style="background:var(--grey)">
+<section>
   <h2>4. Die KI bereitet vor, ein Mensch entscheidet</h2>
-  <p>Beispiel Mietbewerbung und Schadensmeldung in einer Immobilienverwaltung:</p>
-  <ul>
-    <li><b>Die KI darf vorbereiten:</b> Formular vorausfüllen, prüfen, ob etwas fehlt, eine Schadensmeldung einordnen, an die zuständige Person weiterleiten.</li>
-    <li><b>Ein Mensch entscheidet:</b> wer die Wohnung bekommt, ob eine Bewerbung abgelehnt wird, wer den Schaden bezahlt. Er kann die Einordnung der KI korrigieren.</li>
-  </ul>
-  <p class="klein">EU AI Act: menschliche Aufsicht bei hohem Risiko. Schweiz: Datenschutzgesetz Art. 21 zu automatisierten Einzelentscheiden.</p>
-</div>
-
-<div class="karte" style="background:var(--grey)">
-  <h2>5. Meine Regeln</h2>
-  <ul>
-    <li>Ich gebe keine … ein.</li>
-    <li>Bevor ich etwas übernehme, …</li>
-    <li>Für … nutze ich KI bewusst nicht, weil …</li>
-  </ul>
-</div>
+  <div class="karte">
+    <p>Beispiel Mietbewerbung und Schadensmeldung in einer Immobilienverwaltung:</p>
+    <ul>
+      <li><b>Die KI bereitet vor:</b> Formular vorausfüllen, prüfen, ob etwas fehlt, eine Schadensmeldung einordnen, an die zuständige Person weiterleiten.</li>
+      <li><b>Ein Mensch entscheidet:</b> wer die Wohnung bekommt, ob eine Bewerbung abgelehnt wird, wer den Schaden bezahlt. Er kann die Einordnung der KI korrigieren.</li>
+    </ul>
+    <p>Entscheide über Menschen nie allein auf eine KI stützen.</p>
+  </div>
+</section>
 
 <div class="balken"><b>Merke:</b> Hinterfragen ist nicht nur Sache der Anbieter, sondern auch unsere eigene.</div>
 
-<p class="klein"><b>EU AI Act:</b> Regeln nach Risiko. Bei hohem Risiko, zum Beispiel KI bei Bewerbungen, muss ein Mensch überwachen und eingreifen können. <b>Schweiz:</b> kein eigenes KI-Gesetz; der AI Act betrifft aber Firmen mit Kundschaft in der EU. Stand November 2026. Keine Rechtsberatung; die Rechtslage zu KI ist in Bewegung.</p>
+<p class="klein"><b>Recht in Kürze:</b> Der EU AI Act regelt KI nach Risiko; bei hohem Risiko muss ein Mensch überwachen und eingreifen können. Die Schweiz hat kein eigenes KI-Gesetz; das Datenschutzgesetz (Art. 21) regelt automatisierte Einzelentscheide. Stand November 2026. Keine Rechtsberatung; die Rechtslage zu KI ist in Bewegung.</p>
 
 <p class="klein nichtdrucken"><a href="index.html">Zur Übersicht</a></p>
 </main>
