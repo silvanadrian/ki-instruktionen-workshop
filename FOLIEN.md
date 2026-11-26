@@ -14,7 +14,7 @@ Jede Folie hat Sprechernotizen mit den Minuten.
 4. **Schritt 2 · Deine Instruktionen: vier Fragen.** Rolle, Ziel, Vorgehen, Grenzen.
 5. **Schritt 3 · Nachher.** Dieselbe Frage noch einmal: Was ist anders?
 6. **Schritt 4 · Grenze testen.** Zwei Testfragen.
-7. **Schritt 5 · Tauschen zu zweit.** Austricksen, nachschärfen, Aha-Satz.
+7. **Schritt 5 · Dein Aha-Satz.** Vergleichen, aufschreiben, vorlesen.
 8. **Das nimmst du mit.**
 
 **Anhang** (nur bei Fragen oder wenn Zeit bleibt): Drei Stufen vom Prompt zum

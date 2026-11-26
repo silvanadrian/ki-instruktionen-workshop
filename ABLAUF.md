@@ -9,16 +9,16 @@ pünktlich bei Minute 28 schliessen.
 | 2–5 | Vorher | Alle stellen dieselbe Frage in einem leeren Chat. Zwei Personen lesen den ersten Satz ihrer Antwort vor. | Schritt 1 |
 | 5–13 | Bauen | Alle füllen die vier Felder aus (Rolle, Ziel, Vorgehen, Grenzen). Wer nicht weiterkommt, setzt das Beispiel ein und ändert es. Kurzer Input nur auf Zuruf. | Schritt 2 |
 | 13–18 | Nachher | Instruktionen einfügen, dieselbe Frage noch einmal. **Aha-Moment 1:** gleiche Frage, anderes Verhalten. Zwei Stimmen: Was ist anders? | Schritt 3 |
-| 18–22 | Grenze testen | Alle versuchen, den eigenen Assistenten aus der Rolle zu bringen. **Aha-Moment 2:** Er lehnt ab oder widerspricht. | Schritt 4 |
-| 22–27 | Tauschen | Zu zweit: Gerät tauschen, den Assistenten der anderen Person austricksen. Einen Satz nachschärfen. | Schritt 5 |
-| 27–30 | Abschluss | Jede Person liest ihren Aha-Satz vor. Hinweis auf das Skill-File für Geübte und auf das Learning Canvas. | Schritt 5 |
+| 18–23 | Grenze testen | Alle versuchen, den eigenen Assistenten aus der Rolle zu bringen. **Aha-Moment 2:** Er lehnt ab oder widerspricht. Hält eine Grenze nicht: einen Satz nachschärfen. | Schritt 4 |
+| 23–28 | Aha-Satz | Alle schreiben ihren Aha-Satz. Jede Person liest ihn vor. | Schritt 5 |
+| 28–30 | Abschluss | Hinweis auf das Skill-File für Geübte und auf das Learning Canvas. | – |
 
 Es gibt keinen Vortragsteil. Die drei Stufen (Prompt, Instruktionen, Skill-File) und das
 Beispiel aus der Arbeit erzählst du in ein, zwei Sätzen, während die Leute bauen oder
 wenn jemand fragt. Die Folien sind die Rückfallebene, falls es doch einen Beamer gibt.
 
 Geübte arbeiten ab Minute 5 im Abschnitt «Für Geübte» derselben Seite und bauen ein
-Skill-File. Bitte sie in Minute 22, als Tauschpartner für andere zu wirken.
+Skill-File. Bitte sie ab Minute 18, anderen beim Nachschärfen zu helfen.
 
 ## Vorbereiten
 
@@ -29,8 +29,8 @@ Skill-File. Bitte sie in Minute 22, als Tauschpartner für andere zu wirken.
 
 ## Wenn die Zeit knapp wird
 
-Das Tauschen (Minute 22–27) auf zwei Minuten kürzen. Vorher und Nachher nie
-kürzen: Der Vergleich ist der Aha-Moment.
+Das Vorlesen der Aha-Sätze auf zwei, drei Stimmen kürzen. Vorher und Nachher
+nie kürzen: Der Vergleich ist der Aha-Moment.
 
 ## Häufige Fragen
 

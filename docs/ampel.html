@@ -10,10 +10,10 @@
 <main>
 <div class="kopf">Workshop 4 · Future Work Skills · Modul 5</div>
 <h1>KI, Daten und Verantwortung</h1>
-<p>Du arbeitest in deinem eigenen KI-Tool. Diese Seite führt dich durch vier Schritte. Was du hier eintippst, bleibt in deinem Browser und wird nirgends hochgeladen.</p>
+<p>Du arbeitest in deinem eigenen KI-Tool. Diese Seite führt dich durch fünf Schritte. Was du hier eintippst, bleibt in deinem Browser und wird nirgends hochgeladen.</p>
 
 <section class="schritt grau">
-  <h2><span class="nr">1</span>Was weiss deine KI über dich? <span class="zeit">4 Min.</span></h2>
+  <h2><span class="nr">1</span>Was weiss deine KI über dich? <span class="zeit">3 Min.</span></h2>
   <p>Öffne das KI-Tool, das du am meisten nutzt, und stell diese Frage. Lies die Antwort in Ruhe.</p>
   <div class="frage"><span id="q1">Was weisst du über mich? Liste alles auf, was du aus früheren Gesprächen, aus deinem Gedächtnis oder aus meinen Einstellungen über mich weisst.</span><button class="hell" data-copy="q1">Kopieren</button></div>
   <p class="klein">Je nach Tool und Einstellung kommt viel, wenig oder nichts. Auch «nichts» ist eine Antwort: Dann speichert dein Tool keine Erinnerungen, oder die Funktion ist ausgeschaltet.</p>
@@ -32,9 +32,9 @@
 </section>
 
 <section class="schritt">
-  <h2><span class="nr">3</span>Dein Lernvorhaben durch die Ampel <span class="zeit">8 Min.</span></h2>
+  <h2><span class="nr">3</span>Dein Lernvorhaben durch die Ampel <span class="zeit">6 Min.</span></h2>
   <p>Welche Angaben bräuchte die KI, um dir bei deinem Lernvorhaben zu helfen? Trag sie ein und ordne jede ein.</p>
-  <p class="klein"><b>Grün:</b> öffentlich, eigene Ideen, anonymisiert. <b>Gelb:</b> eigene persönliche Angaben, interne Unterlagen, wenn dein Arbeitgeber es erlaubt. <b>Rot:</b> Daten über andere Personen, Vertrauliches, Zugangsdaten.</p>
+  <p class="klein"><b>Grün:</b> öffentlich, eigene Ideen, anonymisiert. <b>Gelb:</b> eigene persönliche Angaben, interne Unterlagen, wenn dein Arbeitgeber es erlaubt, fremde Texte und Bilder. <b>Rot:</b> Daten über andere Personen, Vertrauliches, Zugangsdaten.</p>
   <div class="zeile">
     <input type="text" id="neu" placeholder="z. B. mein Lernziel, Feedback meiner Chefin, Kundenliste" aria-label="Neue Angabe">
     <button id="dazu">Hinzufügen</button>
@@ -45,7 +45,17 @@
 </section>
 
 <section class="schritt">
-  <h2><span class="nr">4</span>Drei eigene Regeln <span class="zeit">5 Min.</span></h2>
+  <h2><span class="nr">4</span>Vor dem Übernehmen: zwei Fragen <span class="zeit">4 Min.</span></h2>
+  <p>Geh zurück zur Antwort aus Schritt 1 (oder zu einer anderen Antwort deiner KI) und frag nach:</p>
+  <div class="frage"><span id="q2">Woher weisst du das? Wie sicher bist du, und was davon ist geraten?</span><button class="hell" data-copy="q2">Kopieren</button></div>
+  <p><b>Stimmt es?</b> Was sicher klingt und fertig aussieht, glauben wir zu schnell. Das heisst <b>Automation Bias</b>. Prüfe mindestens eine Angabe selbst.</p>
+  <p><b>Darf ich es verwenden?</b> Rein KI-erzeugte Inhalte sind in der Schweiz nicht urheberrechtlich geschützt. Und: Gleicht das Ergebnis einem bestehenden Werk?</p>
+  <label for="pruef">Welche Angabe hast du geprüft, und was kam heraus?</label>
+  <textarea id="pruef" placeholder="Die KI sagte …, tatsächlich …"></textarea>
+</section>
+
+<section class="schritt">
+  <h2><span class="nr">5</span>Drei eigene Regeln <span class="zeit">5 Min.</span></h2>
   <p>Wo setzt du KI in deinem Lernvorhaben ein, und wo verzichtest du bewusst? Formuliere drei Regeln, an die du dich hältst.</p>
   <label for="r1">Regel 1</label><input type="text" id="r1" placeholder="Ich gebe keine …">
   <label for="r2">Regel 2</label><input type="text" id="r2" placeholder="Bevor ich etwas übernehme, …">
@@ -54,7 +64,7 @@
   <p>Tausch dich danach zu zweit aus: eine Regel und der Grund dafür.</p>
 </section>
 
-<div class="balken"><b>Automation Bias:</b> Was sicher klingt und fertig aussieht, glauben wir zu schnell. Frag «Woher weisst du das?» und prüfe mindestens eine Angabe selbst.</div>
+<div class="balken"><b>Merke:</b> Hinterfragen ist nicht nur Sache der Anbieter, sondern auch unsere eigene.</div>
 
 <section class="schritt grau">
   <h2>Zum Nachlesen</h2>
@@ -70,7 +80,7 @@
 <script>
 const $ = id => document.getElementById(id);
 const farben = { gruen: "Grün", gelb: "Gelb", rot: "Rot" };
-let stand = { items: [], fund: "", r1: "", r2: "", r3: "", c1: false, c2: false, c3: false };
+let stand = { items: [], fund: "", pruef: "", r1: "", r2: "", r3: "", c1: false, c2: false, c3: false };
 try { stand = Object.assign(stand, JSON.parse(localStorage.getItem("ws4") || "{}")); } catch (e) {}
 function sichern() { try { localStorage.setItem("ws4", JSON.stringify(stand)); } catch (e) {} }
 
@@ -102,7 +112,7 @@ function dazu() {
 }
 $("dazu").addEventListener("click", dazu);
 $("neu").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); dazu(); } });
-for (const k of ["fund", "r1", "r2", "r3"]) { $(k).value = stand[k] || ""; $(k).addEventListener("input", () => { stand[k] = $(k).value; sichern(); }); }
+for (const k of ["fund", "pruef", "r1", "r2", "r3"]) { $(k).value = stand[k] || ""; $(k).addEventListener("input", () => { stand[k] = $(k).value; sichern(); }); }
 document.querySelectorAll("input[type=checkbox][data-k]").forEach(c => {
   c.checked = !!stand[c.dataset.k];
   c.addEventListener("change", () => { stand[c.dataset.k] = c.checked; sichern(); });
@@ -128,6 +138,7 @@ $("alles").addEventListener("click", e => {
   }
   zeilen.push("", "Meine drei Regeln", "1. " + (stand.r1 || "–"), "2. " + (stand.r2 || "–"), "3. " + (stand.r3 || "–"));
   if (stand.fund) zeilen.push("", "Was mich überrascht hat: " + stand.fund);
+  if (stand.pruef) zeilen.push("", "Was ich nachgeprüft habe: " + stand.pruef);
   kopieren(zeilen.join("\n"), e.currentTarget);
 });
 zeichnen();

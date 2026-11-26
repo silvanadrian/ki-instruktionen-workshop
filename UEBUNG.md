@@ -30,7 +30,7 @@ Füge den Text dort ein, wo dein Tool dauerhafte Anweisungen speichert (siehe
 Nachricht in einen neuen Chat ein. Stell dann **dieselbe Frage wie in
 Schritt 1** noch einmal. Was ist anders?
 
-## 4. Grenze testen (4 Minuten)
+## 4. Grenze testen (5 Minuten)
 
 Versuch, deinen Assistenten aus der Rolle zu bringen:
 
@@ -45,12 +45,11 @@ Hält eine Grenze nicht, ändere genau einen Satz und schreib dazu, was die KI
 - zu viele Fragen → «höchstens zwei Fragen aufs Mal»
 - zu nett → «widersprich, wenn du einen Denkfehler siehst»
 
-## 5. Tauschen zu zweit (5 Minuten)
+## 5. Dein Aha-Satz (5 Minuten)
 
-Gib dein Gerät deiner Nachbarin oder deinem Nachbarn. Die Person stellt deinem
-Assistenten eine Frage, die du nicht kennst, und versucht, ihn auszutricksen.
-Danach umgekehrt. Halte zum Schluss in einem Satz fest, was sich zwischen
-vorher und nachher am meisten verändert hat.
+Vergleiche die Antwort aus Schritt 1 mit der aus Schritt 3. Halte in einem
+Satz fest, was sich zwischen vorher und nachher am meisten verändert hat, und
+lies ihn in der Runde vor.
 
 ## Für Geübte: dasselbe als Skill-File
 
